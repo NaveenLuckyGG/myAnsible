@@ -1,0 +1,22 @@
+---
+ - students:
+ - name: anil
+   phno: 123456789
+   address:
+      doorno: 55
+      streetno: 2
+      pincode: 500072
+
+ - name: sunil
+   phno: 987654321
+   address:
+      doorno: 55
+      streetno: 2
+      pincode: 500072
+
+ - name: venil
+   phno: 897456321
+   address:
+      doorno: 55
+      streetno: 2
+      pincode: 500072
