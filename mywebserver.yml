@@ -10,6 +10,5 @@
   - name: i want install apache2 webserver
     apt:
       name: apache2
-      state: restarted
+      state: started
 
-      
