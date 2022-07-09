@@ -23,6 +23,6 @@
   - name:  i want to start webserver on RedHat nodes
     service:
       name: "{{mywebpackonububtu}}"
-      state: started
+      state: present
     when: ansible_os_family =="RedHat"
 
