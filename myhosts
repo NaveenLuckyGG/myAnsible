@@ -1,6 +1,7 @@
 [mywebservers]
 172.31.39.177
 172.31.35.200
+172.31.33.53
 
 [myappservers]
 172.31.39.177
@@ -9,3 +10,7 @@
 [myDBservers]
 172.31.39.177
 172.31.35.200
+
+[myservers]
+server01 java8
+server02 java8
