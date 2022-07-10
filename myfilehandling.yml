@@ -8,3 +8,26 @@
     apt:
       name: apache2
       state: present
+
+  - name: copy index.html file into node side
+    copy:
+       src: myindex.html
+       dest: /var/www/html/index.html
+
+  - name: copy myindex.j2 file into node side 
+    template:
+         src: myindex.j2
+         dest: /var/www/html/index.html
+#   notify: restartwebserver
+
+  - name: download internet file 
+    get_url:
+      url: https://abhi15june22.s3.us-west-2.amazonaws.com/gameoflife.war
+      dest: /home/ubuntu/gameoflife.war
+      force_basic_auth: yes
+  
+  handlers:
+  - name: restartwebserver
+    service: 
+      name: apache2
+      state: started 
